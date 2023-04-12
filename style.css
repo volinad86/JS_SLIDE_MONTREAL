@@ -12,6 +12,13 @@ body{
     width: 800px;
 }
 
+.back:hover{
+    color: azure;
+    }
+    .next:hover{
+    color: azure;
+    }
+
 .btn{
     background-color: #db9860;
     font-size: 30px ;
