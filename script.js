@@ -7,3 +7,20 @@ const photos = ['image/1.jpg',  'image/2.jpg', 'image/3.jpg', 'image/4.jpg', 'im
 console.log(photos [3])
 
 let i = 0;
+
+next.addEventListener('click', () =>{
+    i++;
+    if (i > photos.length -1){
+i = 0;
+    }
+    document.querySelector('.image').src = photos[i];
+})
+
+
+back.addEventListener('click', () => {
+i--
+    if (i < 0){
+i = photos.length -1;
+    }
+document.querySelector('.image').src = photos[i];
+})
